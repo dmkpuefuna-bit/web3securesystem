@@ -1,6 +1,7 @@
 import { useEffect, lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { useAuthStore } from "@/store/auth-store";
 import { ProtectedRoute } from "@/components/layout/ProtectedRoute";
 import { LandingPage } from "@/pages/LandingPage";
@@ -573,6 +574,7 @@ function App() {
 
           <Route path="*" element={<LandingPage />} />
         </Routes>
+        <SpeedInsights />
       </BrowserRouter>
     </QueryClientProvider>
   );
