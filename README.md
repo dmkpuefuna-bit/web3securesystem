@@ -42,7 +42,7 @@ Copy `.env.example` to `.env` and fill in your Supabase credentials:
 cp .env.example .env
 ```
 
-The Supabase URL and anon key are pre-configured in the Bolt environment.
+The Supabase URL and anon key are pre-configured in the environment.
 
 ## Database
 
@@ -118,4 +118,5 @@ CMD ["npm", "run", "preview"]
 ## License
 
 © 2026 Web3SecureSystem. All rights reserved.
+
 # web3securesystem
